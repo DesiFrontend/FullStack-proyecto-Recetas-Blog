@@ -1,0 +1,133 @@
+// Diseño responsivo (320px x 480px)
+@media screen and (min-width: 320px) {
+    .navbar {
+        background-color: var(--primaryColor);
+        display: flex;
+        height: 3rem;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            color: var(--whiteColor);
+            font-size: 10px;
+            text-transform: uppercase;
+            align-items: center;
+            display: inline-block;
+        }
+    }
+
+    .nav-links {
+        a {
+            padding: 0 1rem;
+            transition: all 100ms ease;
+        }
+
+        .logIn {
+            border-radius: 5px;
+            border: 2px solid var(--whiteColor);
+            padding: 0.3rem;
+        }
+
+        .register-btn:hover,
+        .logIn:hover,
+        .logout:hover {
+            border-radius: 5px;
+            border: 2px solid var(--secondaryColor);
+            background-color: var(--secondaryColor);
+            padding: 0.3rem;
+        }
+    }
+
+    .nav-links2 {
+        a {
+            padding: 0 0.5rem;
+        }
+
+        .recipes-btn:hover,
+        .create-btn:hover,
+        .logout:hover {
+            border-radius: 5px;
+            border: 2px solid var(--secondaryColor);
+            background-color: var(--secondaryColor);
+            padding: 0.3rem;
+        }
+
+        .logout {
+            border-radius: 5px;
+            border: 2px solid var(--whiteColor);
+            padding: 0.3rem;
+        }
+    }
+}
+
+// Diseño responsivo (480px x 320px)
+@media screen and (min-width: 480px) {
+    .navbar {
+        .nav-links {
+            a {
+                margin-right: 1rem;
+                padding: 0.4rem 0.6rem;
+            }
+        }
+
+        .nav-links2 {
+            a {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+// Diseño responsivo (768px x 1024px)
+@media screen and (min-width: 768px) {
+    .navbar {
+        height: 4rem;
+        justify-content: space-between;
+
+        a.logo {
+            padding: 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .nav-links {
+            a {
+                margin-right: 3rem;
+                padding: 0.4rem 0.6rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        .nav-links2 {
+            a {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+// Diseño responsivo (1024px x 600px)
+@media screen and (min-width: 1024px) {
+    .navbar {
+        height: 4.5rem;
+
+        a.logo {
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            a {
+                font-size: 1.2rem;
+            }
+        }
+
+        .nav-links2 {
+            a {
+                font-size: 1.2rem;
+            }
+            .logout {
+                padding: 0.6rem 0.8rem;
+            }
+        }
+    }
+}

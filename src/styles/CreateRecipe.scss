@@ -1,0 +1,112 @@
+// Diseño responsivo (320px x 480px)
+@media screen and (min-width: 320px) {
+
+    .mortero,
+    .incense {
+        position: absolute;
+    }
+
+    .mortero {
+        left: 2rem;
+        top: 8.2rem;
+    }
+
+    .incense {
+        right: 2rem;
+        top: 8.2rem;
+    }
+
+    .btns-division {
+        display: grid;
+        gap: 1rem;
+    }
+}
+
+// Diseño responsivo (768px x 1024px)
+@media screen and (min-width: 768px) {
+    .create-recipe {
+        .flex-container {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .icons-template {
+            .mortero {
+                left: 4rem;
+                top: 10rem;
+            }
+
+            .incense {
+                right: 4rem;
+                top: 10rem;
+            }
+        }
+
+        .form-create {
+            padding: 1.5rem;
+        }
+
+        .btns-division {
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+// Diseño responsivo (1024px x 600px)
+@media screen and (min-width: 1024px) {
+    .create-recipe {
+        .icons-template {
+            .icon {
+                width: 8%;
+            }
+    
+            .mortero {
+                left: 8rem;
+                top: 10rem;
+            }
+    
+            .incense {
+                right: 8rem;
+                top: 10rem;
+            }
+        }
+        .icon {
+            width: 8%;
+        }
+    }
+}
+
+// Diseño responsivo (1280px x 800px)
+@media screen and (min-width: 1280px) {
+    .create-recipe {
+        h2.title {
+            font-size: 2rem;
+        }
+
+        .icon {
+            width: 8%;
+        }
+    }
+
+    .icons-template {
+        .icon {
+            width: 6%;
+        }
+
+        .mortero {
+            left: 8rem;
+            top: 12rem;
+        }
+
+        .incense {
+            right: 8rem;
+            top: 12rem;
+        }
+    }
+}

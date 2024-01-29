@@ -1,0 +1,84 @@
+// Diseño responsivo (320px x 480px)
+@media screen and (min-width: 320px) {
+    .edit-recipe {
+        .caldero {
+            width: 90px;
+        }
+
+        .mortero,
+        .incense {
+            top: 10rem;
+        }
+    }
+}
+
+// Diseño responsivo (768px x 1024px)
+@media screen and (min-width: 768px) {
+    .flex-container {
+        .caldero {
+            width: 110px;
+        }
+    }
+
+    .icons-template {
+        .mortero {
+            left: 5rem;
+            top: 12.3rem;
+        }
+
+        .incense {
+            right: 5rem;
+            top: 12.3rem;
+        }
+    }
+
+    .btns-division {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        button {
+            width: 40%;
+            padding: 0.8rem;
+        }
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+// Diseño responsivo (1024px x 600px)
+@media screen and (min-width: 1024px) {
+    .flex-container {
+        .title {
+            font-size: 2rem;
+        }
+    }
+    .icons-template {
+        .mortero {
+            width: 5rem;
+            left: 7rem;
+            top: 12rem;
+        }
+
+        .incense {
+            width: 5rem;
+            right: 7rem;
+            top: 12rem;
+        }
+    }
+}
+
+// Diseño responsivo (1280px x 800px)
+@media screen and (min-width: 1280px) {
+    .btns-division {
+        margin: 2rem 0;
+        button {
+            width: 20%;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+// Diseño responsivo (320px x 480px)
+@media screen and (min-width: 320px) {
+    .post-division {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .my-post {
+            background-color: var(--secondaryColor);
+            border: 3px solid var(--secondaryColor);
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: 90%;
+            gap: 20px;
+            align-items: center;
+            padding: 3px;
+        }
+
+        .post-body {
+            display: flex;
+            flex-direction: column;
+            padding: 0.5em;
+            gap: 10px;
+
+            h4 {
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            h4,
+            p {
+                font-size: 14px;
+            }
+
+            span {
+                color: var(--whiteColor);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// Diseño responsivo (768px x 1024px)
+@media screen and (min-width: 768px) {
+    .post-division {
+        .my-post {
+            width: 70%;
+        }
+
+        .post-body {
+            padding: 1.5em;
+        }
+    }
+}
+
+// Diseño responsivo (1024px x 600px)
+@media screen and (min-width: 1024px) {
+    .post-division {
+        .my-post {
+            width: 50%;
+        }
+
+        .post-body {
+            padding: 2em;
+        }
+    }
+}

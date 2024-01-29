@@ -1,0 +1,93 @@
+// Diseño responsivo (320px x 480px)
+@media screen and (min-width: 320px) {
+    .card-division {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .my-card {
+            background-color: var(--secondaryColor);
+            border: 3px solid var(--secondaryColor);
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: 90%;
+            gap: 20px;
+            align-items: center;
+            padding: 3px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            padding: 0.5em;
+            gap: 10px;
+
+            h4 {
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            h4,
+            p {
+                font-size: 14px;
+            }
+
+            span {
+                color: var(--whiteColor);
+                text-transform: uppercase;
+            }
+        }
+
+        .btns-edit-delete {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1.3rem;
+
+            .edit-btn,
+            .delete-btn {
+                background-color: var(--primaryColor);
+            }
+        }
+    }
+}
+
+// Diseño responsivo (768px x 1024px)
+@media screen and (min-width: 768px) {
+    .card-division {
+        .my-card {
+            width: 70%;
+        }
+
+        .card-body {
+            padding: 1.5em;
+        }
+
+        .btns-edit-delete {
+            gap: 2rem;
+        }
+    }
+}
+
+// Diseño responsivo (1024px x 600px)
+@media screen and (min-width: 1024px) {
+    .card-division {
+        .my-card {
+            width: 50%;
+        }
+
+        .card-body {
+            padding: 2em;
+        }
+        .btns-edit-delete{
+            .edit-btn, .delete-btn {
+                padding: 0.8rem 1.5rem;
+            }
+        }
+    }
+}

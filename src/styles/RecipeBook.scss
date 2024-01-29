@@ -1,0 +1,46 @@
+// Diseño responsivo (320px x 480px)
+@media screen and (min-width: 320px) {
+    .recipe-book {
+        h1.recipe-main-text {
+            color: var(--whiteColor);
+            text-align: center;
+        }
+    }
+}
+
+// Diseño responsivo (768px x 1024px)
+@media screen and (min-width: 768px) {
+    .recipe-book {
+        .title {
+            font-size: 2rem;
+        }
+    }
+}
+
+// Diseño responsivo (1024px x 600px)
+@media screen and (min-width: 1024px) {
+    .recipe-book {
+        .flex-container {
+            .title {
+                font-size: 2rem;
+            }
+    
+            .icon {
+                width: 10%;
+            }
+        }
+    }
+}
+
+// Diseño responsivo (1280px x 800px)
+@media screen and (min-width: 1280px) {
+    .recipe-book {
+        .title {
+            font-size: 2rem;
+        }
+
+        .icon {
+            width: 10%;
+        }
+    }
+}
