@@ -1,0 +1,61 @@
+@media screen and (min-width: 1280px) {
+  input {
+    padding: 0.7em;
+    margin-bottom: 20px;
+    margin-top: 0.5em;
+    color: var(--blackColor);
+    font-size: var(--smallText);
+    width: 100%;
+    border-radius: 5px;
+  }
+  label {
+    color: var(--blackColor);
+    font-family: "Yusei Magic", sans-serif;
+    font-size: var(--normalText);
+  }
+  .link-login {
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    margin-left: 2em;
+    padding: 0.9em 2rem;
+    border: 2px solid var(--whiteColor);
+    border-radius: 5px;
+  }
+  .register .bck-cauldrons {
+    position: absolute;
+    z-index: -1;
+  }
+  .register .form-container {
+    padding: 2rem;
+    width: 50%;
+    border: solid 3px var(--secondaryColor);
+    background-color: var(--secondaryColor);
+  }
+  form {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flex-container .title {
+    font-size: 2.5rem;
+    color: var(--secondaryColor);
+    font-family: "Catalish Huntera", sans-serif;
+  }
+  .form-inputs {
+    width: 55%;
+  }
+  .img-register {
+    width: 40%;
+    align-self: center;
+  }
+  .buttons-register .btn {
+    padding: 1rem 2rem;
+  }
+  .buttons-register .register-btn {
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=RegisterPage.css.map */

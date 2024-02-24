@@ -10,6 +10,7 @@
     
     .content1 {
         color: var(--whiteColor);
+
         justify-content: left;
     
         .title-recipes {
@@ -75,26 +76,38 @@
 @media screen and (min-width: 1024px) {
     .container {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 1em;
 
-        .title-recipes {
-                font-size: 1.9rem;
+        .smoke {
+            height: 90vh;
+            margin-top: -1em;
+        }
+
+        .content1 {
+            align-self: center;
+            p {
+                font-size: 1.5em;
+                color: var(--blackColor);
+                width: 85%;
             }
-        .principal-title {
-            font-size: 5rem;
-            line-height: 4.3rem;
-        }
-        i {
-            font-size: 1.5rem;
-            line-height: 4rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-        img {
-            width: 80%;
+            .cauldron {
+                width: 50%;
+                margin: 2em  20% 0;
+            }
         }
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .blog-recipes {
+        .bck-cauldrons {
+            position: absolute;
+            z-index: -1;
+            background-repeat: repeat-y;
+            background-size: cover;
+        }
+    }
+}
+

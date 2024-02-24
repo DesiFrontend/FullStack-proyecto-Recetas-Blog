@@ -2,8 +2,10 @@ import React from 'react';
 import {useState} from "react";
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import registerimg from '../assets/register.svg';
 import '../styles/RegisterPage.scss';
-import bookRegister from '../assets/register-book.svg';
+// import bookRegister from '../assets/register-book.svg';
+import backgoundcauldron from '../assets/fondo-calderos.svg';
 
 function RegisterPage() {
 
@@ -49,14 +51,16 @@ function RegisterPage() {
   return (
     <>
       <div className='register'>
+        <img className='bck-cauldrons' src={backgoundcauldron} alt="fondo con calderos" />
         <div className="flex-container">
           <h2 className="title">Regístrate</h2>
-          <img src={bookRegister} alt="" className='icon' />
+          {/* <img src={bookRegister} alt="" className='icon' /> */}
         </div>
         <div className="form-container">
           <form onSubmit={handleSubmit} >
-            <label htmlFor="username">Nombre:</label>
-            <input type="text" name="username" id="username" placeholder='Escribe tu nombre de bruja o brujo'
+            <div className="form-inputs">
+              <label htmlFor="username">Nombre:</label>
+            <input type="text" name="username" id="username" placeholder='Tu nombre de bruja o brujo'
               required onChange={handleChange} />
 
             <label htmlFor="email">Correo:</label>
@@ -66,9 +70,16 @@ function RegisterPage() {
             <label htmlFor="password">Contraseña:</label>
             <input type="password" name="password" id="password" placeholder='Contraseña mágica'
               required onChange={handleChange} />
+            </div>
 
-            <button className='btn register-btn'>Registrarme</button>
-            <Link to={'/login'} className='link-login'>Inicia Sesión</Link>
+            <div className="img-register">
+              <img src={registerimg} alt="libro de registro mágico" />
+            </div>
+
+            <div className="buttons-register">
+              <button className='btn register-btn'>Registrarme</button>
+              <Link to={'/login'} className='link-login'>Inicia Sesión</Link>
+            </div>
           </form>
         </div>
       </div>

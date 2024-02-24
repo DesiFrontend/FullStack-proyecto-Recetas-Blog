@@ -1,0 +1,73 @@
+@media screen and (min-width: 320px) {
+  input {
+    padding: 0.7em;
+    margin-bottom: 20px;
+    margin-top: 0.5em;
+    color: var(--blackColor);
+    font-size: var(--smallText);
+    width: 100%;
+    border-radius: 5px;
+  }
+  label {
+    color: var(--blackColor);
+    font-family: "Yusei Magic", sans-serif;
+    font-size: var(--normalText);
+  }
+  .link-register {
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    margin-left: 2em;
+    padding: 0.9em 2rem;
+    border: 2px solid var(--whiteColor);
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .login .title {
+    font-size: 2.5rem;
+    color: var(--secondaryColor);
+    font-family: "Catalish Huntera", sans-serif;
+  }
+  .login .form-container {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login .form-container {
+    padding: 2rem;
+    width: 50%;
+    border: solid 3px var(--secondaryColor);
+    background-color: var(--secondaryColor);
+  }
+  .login .form-container .btn {
+    padding: 1rem 2rem;
+  }
+  .login .form-container .login-btn {
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .login .background-stars {
+    position: absolute;
+    z-index: -1;
+  }
+  form {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flex-container .icon {
+    width: 5%;
+  }
+  .form-inputs {
+    width: 55%;
+  }
+  .img-login {
+    width: 40%;
+    align-self: center;
+  }
+}/*# sourceMappingURL=LoginPage.css.map */

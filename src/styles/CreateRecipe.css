@@ -1,0 +1,76 @@
+@media screen and (min-width: 320px) {
+  .mortero,
+  .incense {
+    position: absolute;
+  }
+  .mortero {
+    left: 2rem;
+    top: 8.2rem;
+  }
+  .incense {
+    right: 2rem;
+    top: 8.2rem;
+  }
+  .btns-division {
+    display: grid;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create-recipe .flex-container h2 {
+    font-size: 2rem;
+  }
+  .create-recipe .icons-template .mortero {
+    left: 4rem;
+    top: 10rem;
+  }
+  .create-recipe .icons-template .incense {
+    right: 4rem;
+    top: 10rem;
+  }
+  .create-recipe .form-create {
+    padding: 1.5rem;
+  }
+  .create-recipe .btns-division {
+    justify-content: center;
+  }
+  .create-recipe .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .create-recipe .icons-template .icon {
+    width: 8%;
+  }
+  .create-recipe .icons-template .mortero {
+    left: 8rem;
+    top: 10rem;
+  }
+  .create-recipe .icons-template .incense {
+    right: 8rem;
+    top: 10rem;
+  }
+  .create-recipe .icon {
+    width: 8%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .create-recipe h2.title {
+    font-size: 2rem;
+  }
+  .create-recipe .icon {
+    width: 8%;
+  }
+  .icons-template .icon {
+    width: 6%;
+  }
+  .icons-template .mortero {
+    left: 8rem;
+    top: 12rem;
+  }
+  .icons-template .incense {
+    right: 8rem;
+    top: 12rem;
+  }
+}/*# sourceMappingURL=CreateRecipe.css.map */
