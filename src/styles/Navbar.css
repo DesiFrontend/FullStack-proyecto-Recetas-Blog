@@ -1,0 +1,99 @@
+@media screen and (min-width: 320px) {
+  .navbar {
+    background-color: var(--primaryColor);
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar a {
+    color: var(--whiteColor);
+    font-size: 10px;
+    align-items: center;
+    display: inline-block;
+  }
+  .nav-links a {
+    padding: 0 1rem;
+    transition: all 100ms ease;
+  }
+  .nav-links .logIn {
+    border-radius: 5px;
+    border: 2px solid var(--whiteColor);
+    padding: 0.3rem;
+  }
+  .nav-links .register-btn:hover,
+  .nav-links .logIn:hover,
+  .nav-links .logout:hover {
+    border-radius: 5px;
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    padding: 0.3rem;
+  }
+  .nav-links2 a {
+    padding: 0 0.5rem;
+  }
+  .nav-links2 .recipes-btn:hover,
+  .nav-links2 .create-btn:hover,
+  .nav-links2 .logout:hover {
+    border-radius: 5px;
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    padding: 0.3rem;
+  }
+  .nav-links2 .logout {
+    border-radius: 5px;
+    border: 2px solid var(--whiteColor);
+    padding: 0.3rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .navbar .nav-links a {
+    margin-right: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+  .navbar .nav-links2 a {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 4rem;
+    justify-content: space-between;
+  }
+  .navbar a.logo {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+  .navbar .nav-links a {
+    margin-right: 3rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  .navbar .nav-links2 a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    height: 4.5rem;
+  }
+  .navbar a.logo {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-links a {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-links2 a {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-links2 .logout {
+    padding: 0.6rem 0.8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar .nav-menu .nav-links .logIn, .navbar .nav-menu .nav-links .register-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

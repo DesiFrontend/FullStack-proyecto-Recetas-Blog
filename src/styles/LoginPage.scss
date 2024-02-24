@@ -2,28 +2,27 @@
 @media screen and (min-width: 320px) {   
     input {
         padding: 0.7em;
-        border: 1px solid var(--whiteColor);
         margin-bottom: 20px;
-        border-radius: 3px;
-        background-color: transparent;
-        border-bottom: 3px solid var(--secondaryColor);
-        color: var(--whiteColor);
+        margin-top: 0.5em;
+        color: var(--blackColor);
         font-size: var(--smallText);
         width: 100%;
+        border-radius: 5px;
     }
     
     label {
-        color: var(--whiteColor);
-        font-family: 'Young', serif;
+        color: var(--blackColor);
+        font-family: 'Yusei Magic', sans-serif;
         font-size: var(--normalText);
-        line-height: 2rem;
     }
     
     .link-register {
         text-transform: uppercase;
-        color: var(--primaryColor);
-        text-decoration: underline;
-        padding: 0 1rem;
+        color: var(--whiteColor);
+        margin-left: 2em;
+        padding: 0.9em 2rem;
+        border: 2px solid var(--whiteColor);
+        border-radius: 5px;
     }
 }
 
@@ -32,10 +31,8 @@
     .login {
         .title {
             font-size: 2.5rem;
-        }
-
-        .icon {
-            width: 15%;
+            color: var(--secondaryColor);
+            font-family: 'Catalish Huntera', sans-serif;
         }
 
         .form-container {
@@ -50,13 +47,47 @@
         .form-container {
                 padding: 2rem;
                 width: 50%;
+                border: solid 3px var(--secondaryColor);
+                background-color: var(--secondaryColor);
         
                 .btn {
                     padding: 1rem 2rem;
                 }
+                .login-btn {
+                    color: var(--whiteColor);
+                    background-color: var(--primaryColor);
+                    border: none;
+                    font-size: 1em;
+                }
             }
-        .icon {
-            width: 7%;
+    }
+}
+
+// Diseño responsivo (1280px x 800px)
+@media screen and (min-width: 1280px) {
+    .login {
+        .background-stars {
+            position: absolute;
+            z-index: -1;
         }
+    }
+    form {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .flex-container {
+        .icon {
+            width: 5%;
+        }
+    }
+    .form-inputs {
+        width: 55%;
+    }
+    .img-login {
+        width: 40%;
+        align-self: center;
     }
 }

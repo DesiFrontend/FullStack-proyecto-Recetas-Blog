@@ -8,7 +8,8 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from '../components/AuthContext';
 import { Link } from 'react-router-dom';
 import '../styles/LoginPage.scss';
-import stars from '../assets/stars.svg';
+import witch from '../assets/witch_woman.png';
+import backgroundstars from '../assets/fondo-gris-estrellas.svg';
 
 function LoginPage() {
 
@@ -49,22 +50,32 @@ function LoginPage() {
 
   return (
     <div className='login'>
+      <img className='background-stars' src={backgroundstars} alt="fondo estrellado" />
       <div className="flex-container">
         <h2 className="title">Inicia Sesión</h2>
-        <img src={stars} alt="" className='icon' />
       </div>
+
       <div className="form-container">
         <form onSubmit={handleSubmit} method='POST'>
-          <label htmlFor="email">Correo:</label>
+          <div className="form-inputs">
+            <label htmlFor="email">Correo:</label>
           <input type="email" name="email" id="email" placeholder='Correo electrónico'
             required onChange={(e) => setEmail(e.target.value)} value={email} />
 
           <label htmlFor="password">Contraseña:</label>
           <input type="password" name="password" id="password" placeholder='Contraseña mágica'
             required onChange={(e) => setPassword(e.target.value)} value={password} />
+          </div>
+          
+          <div className="img-login">
+            <img className='witch-login' src={witch} alt="bruja de caricatura" />
+          </div>
 
-          <button type='submit' className='btn login-btn'>Inicia Sesión</button>
-          <Link to={'/register'} className='link-register'>Crear Cuenta</Link>
+          <div className="buttons-login">
+            <button type='submit' className='btn login-btn'>Inicia Sesión</button>
+            <Link to={'/register'} className='link-register'>Crear Cuenta</Link>
+          </div>
+          
         </form>
       </div>
     </div>

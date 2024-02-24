@@ -16,10 +16,11 @@ body {
 
 :root {
     /* Estilos de Generales de Contenido*/
-    --bgColor: #000000;
+    --bgColor: #C9C9C9;
     --whiteColor: #ffffff;
-    --primaryColor: rgb(156, 3, 183);
+    --primaryColor: #9c03b7;
     --secondaryColor: #9b48db;
+    --blackColor: #343135;
 
     /* Estilos de Fuente y Tipografía*/
     --h2FontSize: 2.5rem;
@@ -59,11 +60,6 @@ body {
     color: var(--whiteColor);
     border-radius: 5px;
     border: 2px solid var(--whiteColor);
-}
-
-.btn:hover {
-    background-color: var(--primaryColor);
-    border: 2px solid var(--primaryColor);
 }
 
 img {

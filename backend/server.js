@@ -159,6 +159,9 @@ app.get('/user', verifyToken, (req, res) => { // se comprueba que el usuario exi
         }
     })
 });
+
+
+
 // --------------------------------------------------- //
 
 // CRUD Receta
@@ -285,7 +288,7 @@ app.get('/other-users-recipes', (req, res) => {
 // ------------------------------ //
 
 const port = process.env.PORT || 3306;
-// Mensaje de que el Servidor se ha conectado correctamente al puerto 3306
+// Mensaje de que el Servidor se ha conectado correctamente al puerto 5000
 app.listen(port, () => {
     console.log('Servidor levantado');
     console.log('Servidor conectado al puerto ' + port);

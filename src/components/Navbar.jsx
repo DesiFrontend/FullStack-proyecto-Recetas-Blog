@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <header className="navbar">
-            <Link to="/" className="logo">Recetas Mágicas</Link>
+            <Link to="/" className="logo">Recetas Naturales Con Mágia</Link>
             <nav className="nav-menu">
                 {user ? ( // Si el usuario está autenticado cambiara el menú con los links de crear receta, recetario y cerrar sesión
                     <div className="nav-links2">

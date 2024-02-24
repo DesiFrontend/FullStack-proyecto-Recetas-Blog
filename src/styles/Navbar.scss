@@ -11,7 +11,6 @@
         a {
             color: var(--whiteColor);
             font-size: 10px;
-            text-transform: uppercase;
             align-items: center;
             display: inline-block;
         }
@@ -113,7 +112,9 @@
 
         a.logo {
             font-size: 1.2rem;
-        }
+            
+            
+    }
 
         .nav-links {
             a {
@@ -127,6 +128,20 @@
             }
             .logout {
                 padding: 0.6rem 0.8rem;
+            }
+        }
+    }
+}
+
+// Diseño responsivo (1280px x 800px)
+@media screen and (min-width: 1280px) {
+    .navbar {
+        .nav-menu {
+            .nav-links{
+                .logIn, .register-btn {
+                    padding: 0.6rem 1rem;
+                    border-radius: 5px;
+                }
             }
         }
     }

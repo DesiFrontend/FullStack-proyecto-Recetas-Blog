@@ -6,6 +6,7 @@ import '../styles/CreateRecipe.scss';
 import { useState } from "react";
 import axios from 'axios';
 import { useAuth } from '../components/AuthContext';
+import { useNavigate } from "react-router-dom";
 
 
 const initialRecipeState = {
@@ -21,18 +22,23 @@ const initialRecipeState = {
     cautions: '',
     notes: '',
 }
-
+//ctrl shift f
 function CreateRecipe() {
     // el estado sirve para manejar los campos del formulario y las recetas
     const [recipeForm, setRecipeForm] = useState(initialRecipeState);
     const [formReset, setFormReset] = useState(false);
+    const [message, setMessage] = useState('');
 
     const { userId } = useAuth();
+    const navigate = useNavigate();
 
     const handleInputChange = (event) => { // se cambia el valor de acuerdo a lo que el usuario va escribiendo en los inputs
         const { name, value } = event.target;
         setRecipeForm({ ...recipeForm, [name]: value });
     };
+
+    // nombre de la receta, ingredientes, instrucciones requeridos
+    // 
 
     const handleSubmit = (event) => { //se envian los datos del formulario a la base de datos
         event.preventDefault();
@@ -47,8 +53,12 @@ function CreateRecipe() {
 
         axios.post('http://localhost:5000/create-recipe', { ...recipeForm, userId }, config)
             .then((response) => {
-                alert(response.data.message);
+                setMessage(response.data.message);
                 console.log('Receta enviada correctamente:', response.data);
+                setTimeout(() => {
+                    setMessage('')
+                    navigate('/recipe-book');
+                }, 2000);
             })
             .catch((error) => {
                 console.error('Error al enviar la receta:', error)
@@ -82,7 +92,7 @@ function CreateRecipe() {
 
                     <label htmlFor="namerecipe">Nombre de la Receta:</label>
                     <input type="text" name="namerecipe" id="namerecipe" placeholder='Nombre de tu receta'
-                        value={recipeForm.namerecipe} onChange={handleInputChange} />
+                        value={recipeForm.namerecipe} onChange={handleInputChange} required/>
 
                     <label htmlFor="userowner">Hecho por:</label>
                     <input type="text" name="userowner" id="userowner" placeholder='Nombre de bruja o brujo'
@@ -98,11 +108,11 @@ function CreateRecipe() {
 
                     <label htmlFor="ingredients">Ingredientes:</label>
                     <input type="text" name="ingredients" id="ingredients" placeholder='Ingredientes mágicos...'
-                        value={recipeForm.ingredients} onChange={handleInputChange} />
+                        value={recipeForm.ingredients} onChange={handleInputChange} required/>
 
                     <label htmlFor="instructions">¿Cómo crearlo?</label>
                     <input type="text" name="instructions" id="instructions" placeholder='Pasos para su elaboración'
-                        value={recipeForm.instructions} onChange={handleInputChange} />
+                        value={recipeForm.instructions} onChange={handleInputChange} required/>
 
                     <label htmlFor="howuse">¿Cómo se usa?</label>
                     <input type="text" name="howuse" id="howuse"
@@ -129,6 +139,14 @@ function CreateRecipe() {
                     <button type='reset' className='btn reset-form' onClick={resetForm}>Resetear formulario</button>
                     </div>
 
+
+                    {
+                        message && <div className="modal-recetas">
+                                        <div className="modal-contenido">
+                                            <p>{message}</p>
+                                        </div>
+                                    </div>
+                    }
                     {formReset && <input type='reset' style={{ display: 'none' }} />}
                 </form>
             </div>
