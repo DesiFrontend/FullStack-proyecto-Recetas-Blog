@@ -1,9 +1,9 @@
 import React from 'react';
-import eye from '../assets/eye.svg';
+import create from '../assets/create.svg';
 import mortero from '../assets/mortero.svg';
 import incense from '../assets/incense-stick.svg';
 import '../styles/CreateRecipe.scss';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from 'axios';
 import { useAuth } from '../components/AuthContext';
 import { useNavigate } from "react-router-dom";
@@ -24,6 +24,23 @@ const initialRecipeState = {
 }
 //ctrl shift f
 function CreateRecipe() {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 688);
+    const cleanup = () => {
+        window.removeEventListener('resize', handleResize);
+    }
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 688);
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            // window.removeEventListener('resize', handleResize);
+            cleanup();
+        };
+    }, []);
+
     // el estado sirve para manejar los campos del formulario y las recetas
     const [recipeForm, setRecipeForm] = useState(initialRecipeState);
     const [formReset, setFormReset] = useState(false);
@@ -37,8 +54,8 @@ function CreateRecipe() {
         setRecipeForm({ ...recipeForm, [name]: value });
     };
 
-    // nombre de la receta, ingredientes, instrucciones requeridos
-    // 
+//     // nombre de la receta, ingredientes, instrucciones requeridos
+//     // 
 
     const handleSubmit = (event) => { //se envian los datos del formulario a la base de datos
         event.preventDefault();
@@ -47,7 +64,7 @@ function CreateRecipe() {
         const config = {
             headers: {
                 Authorization: `Bearer ${token}`,
-            }
+            } 
         }
         console.log('UserId antes de enviar la solicitud:', userId); //comprueba la relacion de las tablas de usuarios y recetas con el userId
 
@@ -58,7 +75,7 @@ function CreateRecipe() {
                 setTimeout(() => {
                     setMessage('')
                     navigate('/recipe-book');
-                }, 2000);
+                }, 4000);
             })
             .catch((error) => {
                 console.error('Error al enviar la receta:', error)
@@ -78,7 +95,7 @@ function CreateRecipe() {
         <div className='create-recipe'>
             <div className="flex-container">
                 <h2 className='title'>Crea una Receta</h2>
-                <img src={eye} alt="ojo místico" className="icon" />
+                <img src={create} alt="creación de receta" className="icon-create" />
             </div>
 
             <div className="icons-template">
@@ -141,11 +158,11 @@ function CreateRecipe() {
 
 
                     {
-                        message && <div className="modal-recetas">
-                                        <div className="modal-contenido">
-                                            <p>{message}</p>
-                                        </div>
-                                    </div>
+                        message && <div className={`modal-recetas ${isMobile ? 'mobile-bg' : 'desktop-bg'}`}>
+                                <div className="modal-contenido">
+                                    <p>{message}</p>
+                                </div>
+                        </div>
                     }
                     {formReset && <input type='reset' style={{ display: 'none' }} />}
                 </form>

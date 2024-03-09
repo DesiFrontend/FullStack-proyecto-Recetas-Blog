@@ -21,6 +21,7 @@ body {
   --primaryColor: #9c03b7;
   --secondaryColor: #9b48db;
   --blackColor: #343135;
+  --blackOpacity: #343135cf;
   /* Estilos de Fuente y Tipografía*/
   --h2FontSize: 2.5rem;
   --normalText: 1.5rem;
@@ -42,7 +43,8 @@ body {
 }
 
 .form-container {
-  border: 3px solid var(--whiteColor);
+  border: 3px solid var(--secondaryColor);
+  background-color: var(--secondaryColor);
   width: 90%;
   padding: 10px;
   border-radius: 10px;
@@ -53,9 +55,9 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   transition: all 100ms ease;
-  padding: 0.5em 1rem;
+  padding: 0.9em 1rem;
   font-weight: 500;
-  background-color: var(--bgColor);
+  background-color: var(--primaryColor);
   color: var(--whiteColor);
   border-radius: 5px;
   border: 2px solid var(--whiteColor);
@@ -68,30 +70,26 @@ img {
 }
 
 .icon {
-  width: 60px;
-}
-
-h2.title {
-  color: var(--whiteColor);
-  font-size: var(--normalText);
+  width: 90px;
 }
 
 @media screen and (min-width: 320px) {
   .main-not-found .not-found {
-    color: var(--whiteColor);
+    color: var(--secondaryColor);
     text-align: center;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 480px) {
   .main-not-found img {
-    width: 70%;
+    width: 50%;
   }
 }
 @media screen and (min-width: 768px) {
   .main-not-found .flex-container h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-not-found img {
-    width: 50%;
+    width: 30%;
   }
 }/*# sourceMappingURL=App.css.map */

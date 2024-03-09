@@ -7,8 +7,74 @@
 
         .mortero,
         .incense {
-            top: 10rem;
+            top: 10.2rem;
         }
+
+        .mobile-edit-bg {
+            background-image: url('../assets/modale-edit-movil.svg');
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--blackOpacity);
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .modal-edit-content {
+                p {
+                    color: var(--whiteColor);
+                    font-size: 18px;
+                    width: 65%;
+                    position: absolute;
+                    text-align: center;
+                    left: 17%;
+                }
+        }
+    }
+}
+
+// Diseño responsivo (430px x 846px)
+@media screen and (min-width: 430px) {
+    .edit-recipe {
+        .modal-edit-content {
+                p {
+                    color: var(--whiteColor);
+                    font-size: 23px;
+                }
+            }
+    }
+}
+
+// Diseño responsivo (688px x 1031px)
+@media screen and (min-width: 688px) {
+    .edit-recipe {
+        .icons-template {
+            .mortero {
+                left: 6rem;
+            }
+            .incense {
+                right: 6rem;
+            }
+        }
+        .form-container {
+            .btns-division {
+                .btn {
+                    width: 20%;
+                }
+            }
+        }
+                .modal-edit-content {
+                    p {
+                        color: var(--whiteColor);
+                        font-size: 20px;
+                        width: 45%;
+                        left: 27%;
+                    }
+                }
     }
 }
 
@@ -16,19 +82,19 @@
 @media screen and (min-width: 768px) {
     .flex-container {
         .caldero {
-            width: 110px;
+            width: 90px;
         }
     }
 
     .icons-template {
         .mortero {
             left: 5rem;
-            top: 12.3rem;
+            top: 11rem;
         }
 
         .incense {
             right: 5rem;
-            top: 12.3rem;
+            top: 11rem;
         }
     }
 
@@ -38,7 +104,7 @@
         justify-content: center;
         margin-bottom: 1rem;
 
-        button {
+        .btn {
             width: 40%;
             padding: 0.8rem;
         }
@@ -47,38 +113,106 @@
     form {
         padding: 15px;
     }
+
+    .edit-recipe {
+        .desktop-edit-bg {
+            background-image: url('../assets/edit-modal-desktop.svg');
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--blackOpacity);
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .modal-edit-content {
+            p {
+                color: var(--whiteColor);
+                color: var(--whiteColor);
+                font-size: 20px;
+                width: 65%;
+                position: absolute;
+                text-align: center;
+                left: 17%;
+                top: 305px;
+            }
+        }
+    }
 }
 
 // Diseño responsivo (1024px x 600px)
 @media screen and (min-width: 1024px) {
+    .edit-recipe {
+        .modal-edit-content {
+            p {
+                font-size: 20px;
+                top: 275px;
+            }
+        }
+        .icons-template {
+                .mortero {
+                    width: 8%;
+                    left: 9rem;
+                    top: 11rem;
+                }
+        
+                .incense {
+                    width: 8%;
+                    right: 9rem;
+                    top: 11rem;
+                }
+            }
+    }
     .flex-container {
         .title {
             font-size: 2rem;
-        }
-    }
-    .icons-template {
-        .mortero {
-            width: 5rem;
-            left: 7rem;
-            top: 12rem;
-        }
-
-        .incense {
-            width: 5rem;
-            right: 7rem;
-            top: 12rem;
         }
     }
 }
 
 // Diseño responsivo (1280px x 800px)
 @media screen and (min-width: 1280px) {
-    .btns-division {
-        margin: 2rem 0;
-        button {
-            width: 20%;
-            padding: 1rem;
-            font-size: 1.1rem;
+    .flex-container {
+        .caldero {
+            width: 150px;
+        }
+    }
+    .edit-recipe {
+        .modal-edit-content {
+                p {
+                    font-size: 25px;
+                    top: 355px;
+                }
+            }
+            .icons-template {
+                .mortero {
+                    width: 8%;
+                    left: 14rem;
+                    top: 12rem;
+                }
+    
+                .incense {
+                    width: 8%;
+                    right: 14rem;
+                    top: 12rem;
+                }
+            }
+            
+        }
+    .form-container {
+        .btns-division {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .btn {
+                width: 20%;
+                padding: 1em 1em;
+            }
         }
     }
 }

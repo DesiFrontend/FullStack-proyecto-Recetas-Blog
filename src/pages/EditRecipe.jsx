@@ -3,10 +3,26 @@ import axios from 'axios';
 import {  useNavigate, useParams } from 'react-router-dom';
 import mortero from '../assets/mortero.svg';
 import incense from '../assets/incense-stick.svg';
-import caldero from '../assets/cauldron.svg';
+import edit from '../assets/edit2.png';
 import '../styles/EditRecipe.scss';
 
 function EditRecipe() {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 688);
+    const cleanup = () => {
+        window.removeEventListener('resize', handleResize);
+    }
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 688);
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            // window.removeEventListener('resize', handleResize);
+            cleanup();
+        };
+    }, []);
 
     const [editedRecipe, setEditedRecipe] = useState({ 
         namerecipe: '',
@@ -23,6 +39,9 @@ function EditRecipe() {
     });
     const navigate = useNavigate();
     const { recipeId } = useParams();
+
+    // mensaje que aparecerá una vez que el uduario haya guardado los cambios para editar la receta
+    const [message, setMessage] = useState('');
 
     useEffect(() => {
         //Se obtiene la información de la receta desde la base de datos usando el ID de la receta
@@ -49,9 +68,12 @@ function EditRecipe() {
         //Se realiza la actualización de la receta
         axios.put(`http://localhost:5000/update-recipe/${recipeId}`, editedRecipe)
         .then(response => {
-            alert('Receta actualizada');
+            setMessage(response.data.message);
             console.log('Receta actualizado con éxito: ', response.data);
-            navigate('/recipe-book'); //Se redirige al usuario a la página de visualización de la receta actualizada
+            setTimeout(() => {
+                    setMessage('')
+                    navigate('/recipe-book');//Se redirige al usuario a la página de visualización de la receta actualizada
+                }, 4000); 
         })
         .catch(error => {
             console.log('Error al actualizar la receta: ' + error);
@@ -67,7 +89,7 @@ function EditRecipe() {
             <div className='edit-recipe'>
                 <div className="flex-container">
                     <h2 className='title'>Edita tu Receta</h2>
-                    <img src={caldero} alt="caldero mágico" className="icon caldero" />
+                    <img src={edit} alt="caldero mágico" className="icon caldero" />
                 </div>
 
                 <div className="icons-template">
@@ -126,6 +148,12 @@ function EditRecipe() {
                             <button type="submit" className='btn save-recipe' onClick={handleUpdate}>Guardar Cambios</button>
                             <button type="button" className='btn cancel-recipe' onClick={handleCancel}>Cancelar</button>
                         </div>
+
+                        {message && <div className={`modal-edit-recipe ${isMobile ? 'mobile-edit-bg' : 'desktop-edit-bg'}`}>
+                            <div className="modal-edit-content">
+                                    <p>{message}</p>
+                                </div>
+                            </div>}
                     </form>
                 </div>
             </div>

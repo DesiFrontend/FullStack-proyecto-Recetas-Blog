@@ -62,7 +62,20 @@
 @media screen and (min-width: 1024px) {
     .post-division {
         .my-post {
-            width: 50%;
+            width: 70%;
+        }
+
+        .post-body {
+            padding: 2em;
+        }
+    }
+}
+
+// Diseño responsivo (1280px x 800px)
+@media screen and (min-width: 1280px) {
+    .post-division {
+        .my-post {
+            width: 80%;
         }
 
         .post-body {

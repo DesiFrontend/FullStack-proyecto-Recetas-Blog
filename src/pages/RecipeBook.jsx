@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import libro from '../assets/libro-magico.svg';
+import speelbook from '../assets/speelbook.png';
 import { useAuth } from '../components/AuthContext';
 import Card from '../components/Card';
 import '../styles/RecipeBook.scss';
@@ -34,7 +34,7 @@ function RecipeBook() {
     <div className='recipe-book'>
       <div className="flex-container">
         <h2 className="title">Recetario</h2>
-        <img src={libro} alt="libro de recetas mágico" className='icon' />
+        <img src={speelbook} alt="libro de recetas mágico" className='icon-recipebook' />
       </div>
       {renderRecipes()}
     </div>

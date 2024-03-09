@@ -4,12 +4,12 @@
   }
   .edit-recipe .mortero,
   .edit-recipe .incense {
-    top: 10rem;
+    top: 10.2rem;
   }
 }
 @media screen and (min-width: 768px) {
   .flex-container .caldero {
-    width: 110px;
+    width: 10%;
   }
   .icons-template .mortero {
     left: 5rem;
@@ -38,12 +38,12 @@
     font-size: 2rem;
   }
   .icons-template .mortero {
-    width: 5rem;
+    width: 8%;
     left: 7rem;
     top: 12rem;
   }
   .icons-template .incense {
-    width: 5rem;
+    width: 8%;
     right: 7rem;
     top: 12rem;
   }
