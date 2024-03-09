@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 28.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1440 900" style="enable-background:new 0 0 1440 900;" xml:space="preserve">
+	 viewBox="0 0 320 900" style="enable-background:new 0 0 320 900;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
 	.st1{fill:#C9C9C9;}
 	.st2{fill:#E0E0E0;}
 	.st3{fill:url(#SVGID_1_);}
 </style>
-<pattern  x="-180" y="875" width="118" height="118" patternUnits="userSpaceOnUse" id="Nueva_muestra_de_motivo_4" viewBox="0 -118 118 118" style="overflow:visible;">
+<pattern  x="-740" y="734.3" width="118" height="118" patternUnits="userSpaceOnUse" id="Nueva_muestra_de_motivo_4" viewBox="0 -118 118 118" style="overflow:visible;">
 	<g>
 		<rect y="-118" class="st0" width="118" height="118"/>
 		<g>
@@ -42,7 +42,7 @@
 		</g>
 	</g>
 </pattern>
-<pattern  id="SVGID_1_" xlink:href="#Nueva_muestra_de_motivo_4" patternTransform="matrix(1.044 0 0 1.1745 291.5234 1476.2468)">
+<pattern  id="SVGID_1_" xlink:href="#Nueva_muestra_de_motivo_4" patternTransform="matrix(1.1689 0 0 1 1129.3351 0)">
 </pattern>
-<rect x="-62.2" y="-78.5" class="st3" width="1503.3" height="1057"/>
+<rect class="st3" width="374" height="900"/>
 </svg>

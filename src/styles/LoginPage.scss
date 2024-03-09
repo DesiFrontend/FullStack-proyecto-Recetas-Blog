@@ -1,5 +1,102 @@
 // Diseño responsivo (320px x 480px)
-@media screen and (min-width: 320px) {   
+@media screen and (min-width: 320px) {  
+    .login {
+        .title {
+                font-size: 2rem;
+                color: var(--secondaryColor);
+                font-family: 'Catalish Huntera', sans-serif;
+            }
+
+                        .mobile-bg {
+                            background-image: url('../assets/modal-create-recipe-movil.svg');
+                            position: fixed;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: var(--blackOpacity);
+                            width: 100vw;
+                            height: 100vh;
+                            top: 0;
+                            left: 0;
+                            background-repeat: no-repeat;
+                            background-position: center;
+            
+                            img.img-modal-recetas {
+                                display: flex;
+                                position: absolute;
+                                border-radius: 8px;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                height: 550px;
+                            }
+            
+                            .modal-contenido {
+                                p {
+                                    font-size: 20px;
+                                    text-align: center;
+                                    color: var(--whiteColor);
+                                    position: absolute;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    top: 45%;
+                                    left: 11%;
+                                    width: 251px;
+                                }
+                            }
+                        }
+
+        .background-stars {
+                position: absolute;
+                z-index: -1;
+                width: fit-content;
+                background-size: cover;
+                background-repeat: repeat;
+                width: 100%;
+                height: 100vh;
+            }
+            .form-container {
+                padding: 2rem;
+                width: 80%;
+                border: solid 3px var(--secondaryColor);
+                background-color: var(--secondaryColor);
+
+                .img-login {
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                    }
+                
+                .buttons-login {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                    justify-content: center;
+
+                    a.link-register {
+                        text-transform: uppercase;
+                        color: var(--whiteColor);
+                        border: 2px solid var(--whiteColor);
+                        border-radius: 5px;
+                        padding: 0.8em 1.8em;
+                    }
+                }
+
+                .btn {
+                    padding: 1rem 2rem;
+                }
+    
+                .login-btn {
+                    color: var(--whiteColor);
+                    background-color: var(--primaryColor);
+                    border: none;
+                    font-size: 1em;
+                }
+
+                
+            }
+        }
+    
     input {
         padding: 0.7em;
         margin-bottom: 20px;
@@ -15,16 +112,26 @@
         font-family: 'Yusei Magic', sans-serif;
         font-size: var(--normalText);
     }
-    
-    .link-register {
-        text-transform: uppercase;
-        color: var(--whiteColor);
-        margin-left: 2em;
-        padding: 0.9em 2rem;
-        border: 2px solid var(--whiteColor);
-        border-radius: 5px;
-    }
 }
+
+// Diseño responsivo (688px x 1031px)
+@media screen and (min-width: 688px) {
+
+    .login {
+        .form-container {
+            .img-login {
+                img {
+                    width: 60%;
+                }
+            }
+            .buttons-login {
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+}
+
 
 // Diseño responsivo (768px x 1024px)
 @media screen and (min-width: 768px) {
@@ -35,8 +142,57 @@
             font-family: 'Catalish Huntera', sans-serif;
         }
 
+                .desktop-bg {
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--blackOpacity);
+                    width: 100vw;
+                    height: 100vh;
+                    top: 0;
+                    left: 0;
+                    background-image: url('../assets/modal-create-recipe.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+        
+                    .modal-contenido {
+                        p {
+                            font-size: 20px;
+                            text-align: center;
+                            color: var(--whiteColor);
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            top: 53%;
+                            left: 19%;
+                            width: 465px;
+                        }
+                    }
+                }
+
         .form-container {
             width: 70%;
+
+            .img-login {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                img {
+                    width: 80%;
+                }
+            }
+            .buttons-login {
+                display: flex;
+                justify-content: start;
+                gap: 2em;
+
+                .login-btn {
+                    margin-left: 2em;
+                }
+            }
         }
     }
 }
@@ -44,31 +200,120 @@
 // Diseño responsivo (1024px x 600px)
 @media screen and (min-width: 1024px) {
     .login {
+        .background-stars {
+            width: 100%;
+        }
         .form-container {
                 padding: 2rem;
-                width: 50%;
+                width: 80%;
                 border: solid 3px var(--secondaryColor);
                 background-color: var(--secondaryColor);
-        
-                .btn {
-                    padding: 1rem 2rem;
-                }
-                .login-btn {
+
+                .buttons-login {
+                    gap: 3.8em;
+                    .login-btn {
                     color: var(--whiteColor);
                     background-color: var(--primaryColor);
                     border: none;
                     font-size: 1em;
+                    margin-left: 0;
+                }
+                }
+        
+                .btn {
+                    padding: 1rem 2rem;
+                }
+                
+                .img-login {
+                            width: 40%;
+                            align-self: center;
+                
+                            img {
+                                width: 30%;
+                                position: absolute;
+                                right: 13%;
+                                top: 30%;
+                            }
+                        }
+            }
+    }
+
+        .login {
+            .background-stars {
+                position: absolute;
+                z-index: -1;
+            }
+
+            .flex-container {
+                .buttons-login {
+                    gap: 3.8em;
+                    justify-content: start;
                 }
             }
+        }
+    
+        form {
+            padding: 15px;
+            // display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    
+        .form-inputs {
+            width: 55%;
+        }
+    
+        
+}
+
+// Diseño responsivo (1250px x 800px)
+@media screen and (min-width: 1250px) {
+    .login {
+        .flex-container {
+            .img-login {
+                img {
+                        width: 29%;
+                        position: absolute;
+                        right: 14%;
+                        top: 25%;
+                }
+            }
+        }
     }
 }
 
 // Diseño responsivo (1280px x 800px)
 @media screen and (min-width: 1280px) {
     .login {
+        .form-container {
+            width: 75%;
+
+            .buttons-login {
+                gap: 3em;
+
+                .login-btn {
+                    margin-left: 2.5em;
+                }
+            }
+
+            .img-login {
+                width: 40%;
+                align-self: center;
+
+                img {
+                        width: 25%;
+                        position: absolute;
+                        right: 17%;
+                        top: 28%;
+                }
+    }
+        }
+        
         .background-stars {
             position: absolute;
             z-index: -1;
+            width: 100%;
+
         }
     }
     form {
@@ -86,8 +331,41 @@
     .form-inputs {
         width: 55%;
     }
-    .img-login {
-        width: 40%;
-        align-self: center;
+    
+}
+
+// Diseño responsivo (1440px x 900px)
+@media screen and (min-width: 1440px) {
+    .login {
+        .form-container {
+                width: 50%;
+
+                form {
+                    display: block;
+                }
+
+                .form-inputs {
+                    width: 58%;
+                }
+
+                .img-login {
+                    img {
+                            width: 18%;
+                            position: absolute;
+                            right: 27%;
+                            top: 28%;
+                    }
+                }
+
+                .buttons-login {
+                    display: flex;
+                    justify-content: start;
+                    gap: 2em;
+
+                    .login-btn {
+                        margin-left: 0em;
+                    }
+                }
+        }
     }
 }

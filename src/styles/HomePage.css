@@ -1,14 +1,20 @@
 @media screen and (min-width: 320px) {
   .not-logged {
-    display: flex;
-    align-items: center;
     padding: 1rem;
-    justify-content: center;
+  }
+  .container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .content1 {
-    color: var(--whiteColor);
-    justify-content: left;
+    color: var(--blackColor);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .content1 img {
+    width: 80%;
   }
   .content1 .title-recipes {
     font-weight: 100;
@@ -25,8 +31,8 @@
     line-height: 3rem;
   }
   .content1 p {
-    font-size: 15px;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
   }
   .blog-recipes .blog-container h2 {
     font-size: 2rem;
@@ -36,22 +42,18 @@
     margin-top: 2rem;
   }
 }
+@media screen and (min-width: 688px) {
+  .container .content1 p {
+    font-size: 25px;
+    padding: 0 1.5em;
+  }
+  .container .content1 img {
+    width: 60%;
+  }
+}
 @media screen and (min-width: 768px) {
-  .not-logged .title-recipes {
-    font-size: 2.5rem;
-  }
-  .not-logged .principal-title {
-    font-size: 6rem;
-    line-height: 5rem;
-    text-transform: uppercase;
-  }
-  .not-logged i {
-    font-size: 1.8rem;
-    line-height: 5rem;
-  }
-  .not-logged p {
-    font-size: 2rem;
-    text-align: left;
+  .container .content1 p {
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -69,20 +71,21 @@
     align-self: center;
   }
   .container .content1 p {
-    font-size: 1.5em;
+    font-size: 18px;
     color: var(--blackColor);
     width: 85%;
   }
   .container .content1 .cauldron {
-    width: 50%;
+    width: 70%;
     margin: 2em 20% 0;
   }
 }
 @media screen and (min-width: 1280px) {
-  .blog-recipes .bck-cauldrons {
-    position: absolute;
-    z-index: -1;
-    background-repeat: repeat-y;
-    background-size: cover;
+  .container .content1 p {
+    font-size: 20px;
+  }
+  .container .content1 .cauldron {
+    width: 50%;
+    margin: 2em 20% 0;
   }
 }/*# sourceMappingURL=HomePage.css.map */

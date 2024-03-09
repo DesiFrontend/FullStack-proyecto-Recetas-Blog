@@ -176,7 +176,7 @@ app.post('/create-recipe', (req, res) => {
             res.status(500).send('Error al crear la receta');
         } else {
             console.log('Receta creada correctamente en la base de datos');
-            res.status(200).json({ message: 'Receta creada con éxito, ve al Recetario para ver como quedo' });
+            res.status(200).json({ message: 'Tu receta ha sido creada con éxito, sigue creando muchas más.' });
         }
     });
 });
@@ -249,7 +249,7 @@ app.put(`/update-recipe/:recipeId`, (req, res) => {
             console.error('Error al actualizar la receta:', err);
             res.status(500).json({ error: 'Error al actualizar la receta en el servidor' });
         } else {
-            res.status(200).json({ message: 'Receta actualizada exitosamente' });
+            res.status(200).json({ message: 'Acabas de perfeccionar tu receta mágica.' });
         }
     });
 });

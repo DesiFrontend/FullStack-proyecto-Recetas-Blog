@@ -9,12 +9,13 @@
   }
   .navbar a {
     color: var(--whiteColor);
-    font-size: 10px;
-    align-items: center;
-    display: inline-block;
+    font-size: 9px;
+    width: 25%;
+    text-align: center;
   }
   .nav-links a {
     padding: 0 1rem;
+    margin-left: 1em;
     transition: all 100ms ease;
   }
   .nav-links .logIn {
@@ -32,6 +33,7 @@
   }
   .nav-links2 a {
     padding: 0 0.5rem;
+    margin: 0 1em 0 0;
   }
   .nav-links2 .recipes-btn:hover,
   .nav-links2 .create-btn:hover,

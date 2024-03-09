@@ -5,6 +5,9 @@
             color: var(--whiteColor);
             text-align: center;
         }
+        .icon-recipebook {
+            width: 90px;
+        }
     }
 }
 
@@ -39,8 +42,8 @@
             font-size: 2rem;
         }
 
-        .icon {
-            width: 10%;
+        img.icon-recipebook {
+            width: 150px;
         }
     }
 }
