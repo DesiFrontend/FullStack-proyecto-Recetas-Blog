@@ -1,0 +1,1765 @@
+@media screen and (min-width: 320px) {
+  .not-logged {
+    padding: 1rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .smoke {
+    width: 300px;
+    height: 415px;
+  }
+  .content1 {
+    color: var(--blackColor);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .content1 .cauldron {
+    width: 250px;
+    height: 250px;
+  }
+  .content1 .title-recipes {
+    font-weight: 100;
+  }
+  .content1 .principal-title {
+    font-family: "Young", serif;
+    color: var(--primaryColor);
+    font-size: 3.6rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+  }
+  .content1 i {
+    font-size: 14px;
+    line-height: 3rem;
+  }
+  .content1 p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .blog-recipes .blog-container h2 {
+    font-size: 2rem;
+    color: var(--blackColor);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 688px) {
+  .container .smoke {
+    width: 450px;
+    height: 600px;
+  }
+  .container .content1 p {
+    font-size: 25px;
+    padding: 0 1.5em;
+  }
+  .container .content1 .cauldron {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .smoke {
+    width: 400px;
+    height: 500px;
+  }
+  .container .content1 p {
+    font-size: 25px;
+  }
+  .container .content1 .cauldron {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1em;
+  }
+  .container .smoke {
+    width: 480px;
+    height: 600px;
+  }
+  .container .content1 {
+    align-self: center;
+  }
+  .container .content1 p {
+    font-size: 22px;
+    color: var(--blackColor);
+  }
+  .container .content1 .cauldron {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container .smoke {
+    width: 600px;
+    height: 710px;
+  }
+  .container .content1 p {
+    font-size: 25px;
+  }
+  .container .content1 .cauldron {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .post-division {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .post-division .my-post {
+    background-color: var(--secondaryColor);
+    border: 3px solid var(--secondaryColor);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 90%;
+    gap: 20px;
+    align-items: center;
+    padding: 3px;
+  }
+  .post-division .post-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 10px;
+  }
+  .post-division .post-body .post-title,
+  .post-division .post-body .post-owner {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    font-size: 16px;
+  }
+  .post-division .post-body p {
+    font-size: 14px;
+    color: var(--whiteColor);
+  }
+}
+@media screen and (min-width: 768px) {
+  .post-division .my-post {
+    width: 70%;
+  }
+  .post-division .post-body {
+    padding: 1.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .post-division .my-post {
+    width: 70%;
+  }
+  .post-division .post-body {
+    padding: 2em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .post-division .my-post {
+    width: 80%;
+  }
+  .post-division .post-body {
+    padding: 2em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .navbar {
+    background-color: var(--primaryColor);
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar a {
+    color: var(--whiteColor);
+    font-size: 9px;
+    width: 25%;
+    text-align: center;
+  }
+  .nav-links a {
+    padding: 0 1rem;
+    margin-left: 1em;
+    transition: all 100ms ease;
+  }
+  .nav-links .logIn {
+    border-radius: 5px;
+    border: 2px solid var(--whiteColor);
+    padding: 0.3rem;
+  }
+  .nav-links .register-btn:hover,
+  .nav-links .logIn:hover,
+  .nav-links .logout:hover {
+    border-radius: 5px;
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    padding: 0.3rem;
+  }
+  .nav-links2 a {
+    padding: 0 0.5rem;
+    margin: 0 1em 0 0;
+  }
+  .nav-links2 .recipes-btn:hover,
+  .nav-links2 .create-btn:hover,
+  .nav-links2 .logout:hover {
+    border-radius: 5px;
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    padding: 0.3rem;
+  }
+  .nav-links2 .logout {
+    border-radius: 5px;
+    border: 2px solid var(--whiteColor);
+    padding: 0.3rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .navbar .nav-links a {
+    margin-right: 1rem;
+    padding: 0.4rem 0.6rem;
+  }
+  .navbar .nav-links2 a {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 4rem;
+    justify-content: space-between;
+  }
+  .navbar a.logo {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    width: 40%;
+  }
+  .navbar .nav-links a {
+    margin-right: 3rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  .navbar .nav-links2 a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    height: 4.5rem;
+  }
+  .navbar a.logo {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-links a {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-links2 a {
+    font-size: 1.2rem;
+  }
+  .navbar .nav-links2 .logout {
+    padding: 0.6rem 0.8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar .nav-menu .nav-links .logIn,
+  .navbar .nav-menu .nav-links .register-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .footer-container {
+    padding: 2rem;
+    background-color: var(--primaryColor);
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .footer-container .grid-container {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .footer-container .box h2 {
+    line-height: 2rem;
+    color: var(--whiteColor);
+    font-weight: 100;
+    text-align: center;
+  }
+  .footer-container .box .social-media {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-container .box .social-media .facebook,
+  .footer-container .box .social-media .instagram,
+  .footer-container .box .social-media .twitter {
+    width: 35px;
+    height: 35px;
+  }
+  .footer-container .box .social-media img {
+    cursor: pointer;
+    margin: 1em 0;
+  }
+  .footer-container .content {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .footer-container .content .hat-witch,
+  .footer-container .content .broom,
+  .footer-container .content .blackcat {
+    width: 35px;
+    height: 35px;
+  }
+  .footer-container .content p {
+    font-size: 20px;
+    color: var(--whiteColor);
+  }
+  .footer-container .section3 a {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container .section3 p {
+    color: var(--whiteColor);
+    text-align: center;
+    font-size: 18px;
+  }
+  .footer-container .section3 .cauldron-logo {
+    width: 250px;
+    height: 250px;
+  }
+  .copyright {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .copyright p {
+    color: var(--blackColor);
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 688px) {
+  .footer-container .box .social-media .facebook,
+  .footer-container .box .social-media .instagram,
+  .footer-container .box .social-media .twitter {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-container .section {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .footer-container .section .content {
+    display: block;
+  }
+  .footer-container .section .content .hat-witch,
+  .footer-container .section .content .broom,
+  .footer-container .section .content .blackcat {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-container .section .content p {
+    font-size: 20px;
+  }
+  .footer-container .section3 .cauldron-logo {
+    width: 270px;
+    height: 270px;
+  }
+  .footer-container .section3 p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container .box h2 {
+    text-align: left;
+  }
+  .footer-container .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-container .grid-container .section .content {
+    display: flex;
+    gap: 1em;
+  }
+  .footer-container .grid-container .section .content .hat-witch,
+  .footer-container .grid-container .section .content .broom,
+  .footer-container .grid-container .section .content .blackcat {
+    width: 60px;
+    height: 55px;
+  }
+  .footer-container .grid-container .section .content p {
+    font-size: 13px;
+    text-align: left;
+  }
+  .footer-container .grid-container .section2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .footer-container .grid-container .section2 .social-media {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container .grid-container .section2 .social-media .facebook,
+  .footer-container .grid-container .section2 .social-media .instagram,
+  .footer-container .grid-container .section2 .social-media .twitter {
+    width: 55px;
+    height: 55px;
+  }
+  .footer-container .section3 .cauldron-logo {
+    width: 260px;
+    height: 260px;
+  }
+  .footer-container .section3 p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-container .footer-info .box .content .hat-witch,
+  .footer-container .footer-info .box .content .broom,
+  .footer-container .footer-info .box .content .blackcat {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-container .footer-info .box .content p {
+    font-size: 18px;
+  }
+  .footer-container .grid-container .section2 .social-media .facebook,
+  .footer-container .grid-container .section2 .social-media .instagram,
+  .footer-container .grid-container .section2 .social-media .twitter {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-container .section3 .cauldron-logo {
+    width: 220px;
+    height: 220px;
+  }
+  .footer-container .section3 p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-container .footer-info .box .content .hat-witch,
+  .footer-container .footer-info .box .content .broom,
+  .footer-container .footer-info .box .content .blackcat {
+    width: 45px;
+    height: 45px;
+  }
+  .footer-container .grid-container .section2 .social-media .facebook,
+  .footer-container .grid-container .section2 .social-media .instagram,
+  .footer-container .grid-container .section2 .social-media .twitter {
+    width: 45px;
+    height: 45px;
+  }
+  .footer-container .section3 .cauldron-logo {
+    width: 250px;
+    height: 250px;
+  }
+  .footer-container .section3 p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .login .title {
+    font-size: 2rem;
+    color: var(--secondaryColor);
+    font-family: "Yusei Magic", sans-serif;
+  }
+  .login .mobile-bg {
+    background-image: url("../assets/modal-contra-incorrecta.jpg");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .mobile-bg img.img-modal-recetas {
+    display: flex;
+    position: absolute;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+  }
+  .login .mobile-bg .modal-contenido p {
+    font-size: 24px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7%;
+    left: 11%;
+    width: 251px;
+  }
+  .login .background-stars {
+    position: absolute;
+    z-index: -1;
+    width: fit-content;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  .login .form-container {
+    padding: 2rem;
+    width: 80%;
+    border: solid 3px var(--secondaryColor);
+    background-color: var(--secondaryColor);
+  }
+  .login .form-container .img-login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .login .form-container .buttons-login {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .login .form-container .buttons-login a.link-register {
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    border: 2px solid var(--whiteColor);
+    border-radius: 5px;
+    padding: 0.8em 1.8em;
+  }
+  .login .form-container .btn {
+    padding: 1rem 2rem;
+  }
+  .login .form-container .login-btn {
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+    font-size: 1em;
+  }
+  input {
+    padding: 0.7em;
+    margin-bottom: 20px;
+    margin-top: 0.5em;
+    color: var(--blackColor);
+    font-size: var(--smallText);
+    width: 100%;
+    border-radius: 5px;
+  }
+  label {
+    color: var(--blackColor);
+    font-family: "Yusei Magic", sans-serif;
+    font-size: var(--normalText);
+  }
+}
+@media screen and (min-width: 430px) {
+  .login .form-container .img-login img {
+    width: 60%;
+  }
+  .login .form-container .buttons-login {
+    justify-content: space-evenly;
+  }
+  .login .mobile-bg {
+    background-image: url("../assets/modal-contra-incorrecta.jpg");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .mobile-bg .modal-contenido p {
+    font-size: 21px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 19%;
+    left: 21%;
+    width: 251px;
+  }
+}
+@media screen and (min-width: 688px) {
+  .login .form-container .img-login img {
+    width: 60%;
+  }
+  .login .form-container .buttons-login {
+    justify-content: space-evenly;
+  }
+  .login .mobile-bg {
+    background-image: url("../assets/modal-contra-incorrecta.jpg");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .mobile-bg .modal-contenido p {
+    font-size: 20px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 21%;
+    left: 28%;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .login .title {
+    font-size: 2.5rem;
+    color: var(--secondaryColor);
+    font-family: "Yusei Magic", sans-serif;
+  }
+  .login .desktop-bg {
+    background-image: url("../assets/contra-incorrecta-desktop.png");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .desktop-bg .modal-contenido p {
+    font-size: 35px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 37%;
+    left: 19%;
+    width: 465px;
+  }
+  .login .form-container {
+    width: 70%;
+  }
+  .login .form-container .img-login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .login .form-container .img-login img {
+    width: 80%;
+  }
+  .login .form-container .buttons-login {
+    display: flex;
+    justify-content: start;
+    gap: 2em;
+  }
+  .login .form-container .buttons-login .login-btn {
+    margin-left: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .login .background-stars {
+    width: 100%;
+    height: 100%;
+  }
+  .login .form-container {
+    padding: 2rem;
+    width: 80%;
+    border: solid 3px var(--secondaryColor);
+    background-color: var(--secondaryColor);
+  }
+  .login .form-container .buttons-login {
+    gap: 3.8em;
+  }
+  .login .form-container .buttons-login .login-btn {
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+    font-size: 1em;
+    margin-left: 0;
+  }
+  .login .form-container .btn {
+    padding: 1rem 2rem;
+  }
+  .login .form-container .img-login {
+    width: 40%;
+    align-self: center;
+  }
+  .login .form-container .img-login img {
+    width: 30%;
+    position: absolute;
+    right: 13%;
+    top: 35%;
+  }
+  .login .background-stars {
+    position: absolute;
+    z-index: -1;
+  }
+  .login .flex-container .buttons-login {
+    gap: 3.8em;
+    justify-content: start;
+  }
+  .login .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/contra-incorrecta-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .desktop-bg .modal-contenido p {
+    font-size: 26px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 31%;
+    left: 22%;
+    width: 540px;
+  }
+  form {
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form-inputs {
+    width: 55%;
+  }
+  .form-container {
+    margin-top: 15rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .login .form-container {
+    margin-top: 0;
+  }
+  .login .form-container .img-login img {
+    width: 29%;
+    position: absolute;
+    right: 14%;
+    top: 22%;
+  }
+  .login .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/contra-incorrecta-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .desktop-bg .modal-contenido p {
+    font-size: 30px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 36%;
+    left: 25%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .login .form-container {
+    width: 75%;
+    margin-top: 0;
+  }
+  .login .form-container .buttons-login {
+    gap: 3em;
+  }
+  .login .form-container .buttons-login .login-btn {
+    margin-left: 2.5em;
+  }
+  .login .form-container .img-login {
+    width: 40%;
+    align-self: center;
+  }
+  .login .form-container .img-login img {
+    width: 25%;
+    position: absolute;
+    right: 17%;
+    top: 26%;
+  }
+  .login .background-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  .login .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/contra-incorrecta-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .desktop-bg .modal-contenido p {
+    font-size: 25px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 36%;
+    left: 27%;
+  }
+  form {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flex-container .icon {
+    width: 5%;
+  }
+  .form-inputs {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .login .form-container {
+    width: 50%;
+  }
+  .login .form-container form {
+    display: block;
+  }
+  .login .form-container .form-inputs {
+    width: 58%;
+  }
+  .login .form-container .img-login img {
+    width: 18%;
+    position: absolute;
+    right: 27%;
+    top: 25%;
+  }
+  .login .form-container .buttons-login {
+    display: flex;
+    justify-content: start;
+    gap: 2em;
+  }
+  .login .form-container .buttons-login .login-btn {
+    margin-left: 0em;
+  }
+  .login .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/contra-incorrecta-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .login .desktop-bg .modal-contenido p {
+    font-size: 30px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 37%;
+    left: 31%;
+  }
+}
+@media screen and (min-width: 320px) {
+  .register .mobile-bg {
+    background-image: url("../assets/modal-user-repeat-movil.png");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .register .mobile-bg img.img-modal-recetas {
+    display: flex;
+    position: absolute;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+  }
+  .register .mobile-bg .modal-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register .mobile-bg .modal-contenido p {
+    font-size: 23px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    top: 22%;
+    left: 12%;
+  }
+  .register .bck-cauldrons {
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 1000px;
+  }
+  .register .title {
+    color: var(--secondaryColor);
+    font-family: "Yusei Magic", sans-serif;
+    font-size: 2rem;
+  }
+  .register .form-container {
+    padding: 2rem;
+    width: 80%;
+    border: solid 3px var(--secondaryColor);
+    background-color: var(--secondaryColor);
+  }
+  .register .img-register {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .register .buttons-register {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .register .buttons-register .register-btn {
+    color: var(--whiteColor);
+    background-color: var(--primaryColor);
+    border: none;
+    font-size: 1em;
+    padding: 1rem 2rem;
+  }
+  .register .buttons-register a.link-login {
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    border: 2px solid var(--whiteColor);
+    border-radius: 5px;
+    padding: 0.8em 1.8em;
+  }
+}
+@media screen and (min-width: 688px) {
+  .register .bck-cauldrons {
+    height: 1185px;
+  }
+  .register .mobile-bg {
+    background-image: url("../assets/modal-user-repeat-movil.png");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .register .mobile-bg .modal-contenido p {
+    font-size: 23px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    top: 22%;
+    left: 32%;
+    width: 250px;
+  }
+  .register .form-container .img-register img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .register .bck-cauldrons {
+    height: 1104px;
+  }
+  .register .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-user-repeat-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .register .desktop-bg .modal-contenido p {
+    font-size: 25px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 33%;
+    left: 13%;
+    width: 292px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .register .bck-cauldrons {
+    width: 100%;
+    height: 120%;
+  }
+  .register .form-container .img-register img {
+    width: 30%;
+    position: absolute;
+    right: 13%;
+    top: 45%;
+  }
+  .register .form-container .buttons-register {
+    justify-content: flex-start;
+    gap: 4em;
+  }
+  .register .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-user-repeat-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .register .desktop-bg .modal-contenido p {
+    font-size: 25px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 36%;
+    left: 17%;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .register .form-container {
+    height: 530px;
+    width: 75%;
+  }
+  .register .form-container form {
+    display: block;
+  }
+  .register .form-container form .form-inputs {
+    width: 50%;
+  }
+  .register .form-container .img-register img {
+    top: 30%;
+    right: 15%;
+  }
+  .register .form-container .buttons-register .register-btn {
+    margin-left: 1em;
+  }
+  .register .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-user-repeat-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .register .desktop-bg .modal-contenido p {
+    font-size: 25px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 39%;
+    left: 25%;
+    width: 372px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .register .form-container {
+    width: 50%;
+  }
+  .register .form-container form .form-inputs {
+    width: 55%;
+  }
+  .register .form-container .img-register img {
+    top: 33%;
+    left: 54%;
+    width: 19%;
+  }
+  .register .form-container .buttons-register {
+    gap: 1em;
+  }
+  .register .form-container .buttons-register .register-btn {
+    margin-left: 0em;
+  }
+  .register .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-user-repeat-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .register .desktop-bg .modal-contenido p {
+    font-size: 28px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left: 28%;
+  }
+}
+@media screen and (min-width: 320px) {
+  .recipe-book h1.recipe-main-text {
+    color: var(--whiteColor);
+    text-align: center;
+  }
+  .recipe-book .icon-recipebook {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .recipe-book .title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .recipe-book .flex-container .title {
+    font-size: 2rem;
+  }
+  .recipe-book .flex-container .icon {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .recipe-book .title {
+    font-size: 2rem;
+  }
+  .recipe-book img.icon-recipebook {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .icon-create {
+    width: 90px;
+  }
+  .mobile-bg {
+    background-image: url("../assets/modal-create-recipe-movil.jpg");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .mobile-bg img.img-modal-recetas {
+    display: flex;
+    position: absolute;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+  }
+  .mobile-bg .modal-contenido p {
+    font-size: 20px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 45%;
+    left: 11%;
+    width: 251px;
+  }
+  .icons-template .mortero,
+  .icons-template .incense {
+    position: absolute;
+  }
+  .icons-template .mortero {
+    left: 2rem;
+    top: 10.2rem;
+    width: 60px;
+  }
+  .icons-template .incense {
+    right: 2rem;
+    top: 10.2rem;
+    width: 60px;
+  }
+  .btns-division {
+    display: grid;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 375px) {
+  .mobile-bg {
+    background-image: url("../assets/modal-create-recipe-movil.jpg");
+  }
+  .mobile-bg .modal-contenido p {
+    font-size: 18px;
+    top: 46%;
+    left: 11%;
+    width: 280px;
+  }
+}
+@media screen and (min-width: 430px) {
+  .mobile-bg {
+    background-image: url("../assets/modal-create-recipe-movil.jpg");
+    background-position: center;
+    width: 100%;
+  }
+  .mobile-bg .modal-contenido p {
+    font-size: 18px;
+    top: 46%;
+    left: 11%;
+    width: 319px;
+  }
+}
+@media screen and (min-width: 688px) {
+  .create-recipe .icons-template .mortero,
+  .create-recipe .icons-template .incense {
+    position: absolute;
+  }
+  .create-recipe .icons-template .mortero {
+    left: 5rem;
+    top: 9.2rem;
+    width: 70px;
+  }
+  .create-recipe .icons-template .incense {
+    right: 5rem;
+    top: 9.2rem;
+    width: 70px;
+  }
+  .form-container .btns-division {
+    display: flex;
+    justify-content: center;
+  }
+  .form-container .btns-division .btn {
+    padding: 1em 1.5em;
+  }
+  .mobile-bg {
+    background-image: url("../assets/modal-create-recipe-movil.jpg");
+    background-position: center;
+    width: 100%;
+  }
+  .mobile-bg .modal-contenido p {
+    font-size: 20px;
+    top: 47%;
+    left: 15%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .create-recipe .flex-container h2 {
+    font-size: 2rem;
+  }
+  .create-recipe .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-create-recipe.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .create-recipe .desktop-bg .modal-contenido p {
+    font-size: 20px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 53%;
+    left: 19%;
+    width: 465px;
+  }
+  .create-recipe .icons-template .mortero {
+    left: 4rem;
+    top: 11rem;
+  }
+  .create-recipe .icons-template .incense {
+    right: 4rem;
+    top: 11rem;
+  }
+  .create-recipe .form-create {
+    padding: 1.5rem;
+  }
+  .create-recipe .form-container .btns-division {
+    display: flex;
+    justify-content: center;
+  }
+  .create-recipe .form-container .btns-division .btn {
+    padding: 1em 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .create-recipe .form-container .btns-division {
+    display: flex;
+    justify-content: center;
+  }
+  .create-recipe .form-container .btns-division .btn {
+    padding: 1em 1em;
+  }
+  .create-recipe .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-create-recipe.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .create-recipe .desktop-bg .modal-contenido p {
+    font-size: 20px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 57%;
+    left: 25%;
+    width: 500px;
+  }
+  .create-recipe .icons-template .icon-create {
+    width: 110px;
+  }
+  .create-recipe .icons-template .mortero {
+    left: 8rem;
+    top: 11.5rem;
+  }
+  .create-recipe .icons-template .incense {
+    right: 8rem;
+    top: 11.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .create-recipe .icon-create {
+    width: 110px;
+  }
+  .create-recipe .icons-template .mortero {
+    left: 10rem;
+    top: 11.8rem;
+    width: 90px;
+  }
+  .create-recipe .icons-template .incense {
+    width: 90px;
+    right: 10rem;
+    top: 11.8rem;
+  }
+  .create-recipe .form-container .btns-division {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .create-recipe .form-container .btns-division .btn {
+    padding: 1em 2em;
+    width: 30%;
+  }
+  .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-create-recipe.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .desktop-bg .modal-contenido p {
+    font-size: 23px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 59%;
+    left: 30%;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .create-recipe .form-container .btns-division {
+    justify-content: center;
+    align-items: center;
+  }
+  .create-recipe .form-container .btns-division .btn {
+    width: 20%;
+    padding: 1em 1em;
+  }
+  .create-recipe h2.title {
+    font-size: 2rem;
+  }
+  .create-recipe .icon-create {
+    width: 150px;
+  }
+  .create-recipe .desktop-bg {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/modal-create-recipe.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .create-recipe .desktop-bg img.img-modal-recetas {
+    display: flex;
+    position: absolute;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+  }
+  .create-recipe .desktop-bg .modal-contenido p {
+    font-size: 25px;
+    text-align: center;
+    color: var(--whiteColor);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    left: 33%;
+    width: 500px;
+  }
+  .create-recipe .icons-template .icon {
+    width: 8%;
+  }
+  .create-recipe .icons-template .mortero {
+    left: 14rem;
+    top: 12rem;
+  }
+  .create-recipe .icons-template .incense {
+    right: 14rem;
+    top: 12rem;
+  }
+}
+@media screen and (min-width: 320px) {
+  .edit-recipe .caldero {
+    width: 90px;
+  }
+  .edit-recipe .mortero,
+  .edit-recipe .incense {
+    top: 10.2rem;
+  }
+  .edit-recipe .mobile-edit-bg {
+    background-image: url("../assets/modale-edit-movil.jpg");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .edit-recipe .modal-edit-content p {
+    color: var(--whiteColor);
+    font-size: 18px;
+    width: 65%;
+    position: absolute;
+    text-align: center;
+    left: 17%;
+  }
+}
+@media screen and (min-width: 430px) {
+  .edit-recipe .modal-edit-content p {
+    color: var(--whiteColor);
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 688px) {
+  .edit-recipe .icons-template .mortero {
+    left: 6rem;
+  }
+  .edit-recipe .icons-template .incense {
+    right: 6rem;
+  }
+  .edit-recipe .form-container .btns-division .btn {
+    width: 20%;
+  }
+  .edit-recipe .modal-edit-content p {
+    color: var(--whiteColor);
+    font-size: 20px;
+    width: 45%;
+    left: 27%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flex-container .caldero {
+    width: 90px;
+  }
+  .icons-template .mortero {
+    left: 5rem;
+    top: 11rem;
+  }
+  .icons-template .incense {
+    right: 5rem;
+    top: 11rem;
+  }
+  .btns-division {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .btns-division .btn {
+    width: 40%;
+    padding: 0.8rem;
+  }
+  form {
+    padding: 15px;
+  }
+  .edit-recipe .desktop-edit-bg {
+    background-image: url("../assets/edit-modal-desktop.jpg");
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackOpacity);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .edit-recipe .modal-edit-content p {
+    color: var(--whiteColor);
+    color: var(--whiteColor);
+    font-size: 20px;
+    width: 65%;
+    position: absolute;
+    text-align: center;
+    left: 17%;
+    top: 505px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .edit-recipe .modal-edit-content p {
+    font-size: 20px;
+    top: 275px;
+  }
+  .edit-recipe .icons-template .mortero {
+    width: 8%;
+    left: 9rem;
+    top: 11rem;
+  }
+  .edit-recipe .icons-template .incense {
+    width: 8%;
+    right: 9rem;
+    top: 11rem;
+  }
+  .flex-container .title {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .flex-container .caldero {
+    width: 150px;
+  }
+  .edit-recipe .modal-edit-content p {
+    font-size: 25px;
+    top: 355px;
+  }
+  .edit-recipe .icons-template .mortero {
+    width: 8%;
+    left: 14rem;
+    top: 12rem;
+  }
+  .edit-recipe .icons-template .incense {
+    width: 8%;
+    right: 14rem;
+    top: 12rem;
+  }
+  .form-container .btns-division {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .form-container .btns-division .btn {
+    width: 20%;
+    padding: 1em 1em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .card-division {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .card-division .my-card {
+    background-color: var(--secondaryColor);
+    border: 3px solid var(--secondaryColor);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 90%;
+    gap: 20px;
+    align-items: center;
+    padding: 3px;
+  }
+  .card-division .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 10px;
+  }
+  .card-division .card-body h4 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .card-division .card-body h4,
+  .card-division .card-body p {
+    font-size: 14px;
+  }
+  .card-division .card-body span {
+    color: var(--whiteColor);
+    text-transform: uppercase;
+  }
+  .card-division .btns-edit-delete {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.3rem;
+  }
+  .card-division .btns-edit-delete .edit-btn,
+  .card-division .btns-edit-delete .delete-btn {
+    background-color: var(--primaryColor);
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-division .my-card {
+    width: 70%;
+  }
+  .card-division .card-body {
+    padding: 1.5em;
+  }
+  .card-division .btns-edit-delete {
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card-division .my-card {
+    width: 50%;
+  }
+  .card-division .card-body {
+    padding: 2em;
+  }
+  .card-division .btns-edit-delete .edit-btn,
+  .card-division .btns-edit-delete .delete-btn {
+    padding: 0.8rem 1.5rem;
+  }
+}/*# sourceMappingURL=estilos.css.map */

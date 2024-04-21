@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import React from 'react';
 import { useAuth } from '../components/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Navbar.scss';
+import '../css/estilos.css';
 
 export default function Navbar() {
     const navigate = useNavigate();
@@ -17,18 +17,34 @@ export default function Navbar() {
 
     return (
         <header className="navbar">
-            <Link to="/" className="logo">Recetas Naturales Con Mágia</Link>
+            <Link to="/" className="logo">
+                Recetas Naturales Con Mágia
+            </Link>
             <nav className="nav-menu">
                 {user ? ( // Si el usuario está autenticado cambiara el menú con los links de crear receta, recetario y cerrar sesión
                     <div className="nav-links2">
-                        <Link to="/recipe-book" className="recipes-btn">Recetario</Link>
-                        <Link to="/create-recipe" className="create-btn">Crear Receta</Link>
-                        <Link to={'/login'} onClick={handleLogout} className="logout">Cerrar Sesión</Link>
+                        <Link to="/recipe-book" className="recipes-btn">
+                            Recetario
+                        </Link>
+                        <Link to="/create-recipe" className="create-btn">
+                            Crear Receta
+                        </Link>
+                        <Link
+                            to={'/login'}
+                            onClick={handleLogout}
+                            className="logout"
+                        >
+                            Cerrar Sesión
+                        </Link>
                     </div>
                 ) : (
                     <div className="nav-links">
-                        <Link to="/login" className="logIn">Inicia Sesión</Link>
-                        <Link to="/register" className="register-btn">Registro</Link>
+                        <Link to="/login" className="logIn">
+                            Inicia Sesión
+                        </Link>
+                        <Link to="/register" className="register-btn">
+                            Registro
+                        </Link>
                     </div>
                 )}
             </nav>
