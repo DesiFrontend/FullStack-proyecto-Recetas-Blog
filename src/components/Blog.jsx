@@ -7,7 +7,7 @@ export default function Blog() {
 
     useEffect(() => {
         axios
-            .get('https://localhost:5000/other-users-recipes') //Se muestran todas las recetas creadas por los usuarios
+            .get('http://localhost:5000/other-users-recipes') //Se muestran todas las recetas creadas por los usuarios
             .then((response) => {
                 setOtherUsersRecipes(response.data);
             })
