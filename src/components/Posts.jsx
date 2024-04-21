@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Posts.scss';
+import '../css/estilos.css';
 
 // El Post solo muestra la información de las recetas creadas por los usuarios pero sin la posibilidad de eliminarlas o modificarlas.
 // Solo se puden editar o eliminar las recetas creadas dentro de la cuenta del usuario.
@@ -10,22 +10,22 @@ function Posts({ recipe }) {
             <div className="post-division">
                 <div className="my-post">
                     <div className="post-body">
-                        <h4 className="post-title">{recipe.namerecipe}</h4>
-                        <h4 className='post-owner'>{recipe.userowner}</h4>
-                        <p><span>Uso: </span>{recipe.intentions}</p>
-                        <p><span>Cúando usarlo: </span>{recipe.whenuse}</p>
-                        <p><span>Ingredientes: </span>{recipe.ingredients}</p>
-                        <p><span>Cómo hacerlo: </span>{recipe.instructions}</p>
-                        <p><span>Como usarlo: </span>{recipe.howuse}</p>
-                        <p><span>Usos Mágicos: </span>{recipe.magicuses}</p>
-                        <p><span>Uso Medicinal: </span>{recipe.medicaluses}</p>
-                        <p><span>Precauciones: </span>{recipe.cautions}</p>
-                        <p><span>Notas: </span>{recipe.notes}</p>
+                        <h1 className="post-title">{recipe.namerecipe}</h1>
+                        <h2 className="post-owner">{recipe.userowner}</h2>
+                        <p>Uso: {recipe.intentions}</p>
+                        <p>Cúando usarlo: {recipe.whenuse}</p>
+                        <p>Ingredientes: {recipe.ingredients}</p>
+                        <p>Cómo hacerlo: {recipe.instructions}</p>
+                        <p>Como usarlo: {recipe.howuse}</p>
+                        <p>Usos Mágicos: {recipe.magicuses}</p>
+                        <p>Uso Medicinal: {recipe.medicaluses}</p>
+                        <p>Precauciones: {recipe.cautions}</p>
+                        <p>Notas: {recipe.notes}</p>
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
 
-export default Posts
+export default Posts;

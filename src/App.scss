@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Young+Serif&family=Yusei+Magic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Yusei+Magic&display=swap');
+// tipografía que utiliza la web (primaria y secundaria)
+@font-face {
+    font-family: 'YourFont';
+    src: url('./assets/fonts/YoungSerif-Regular.ttf') format('truetype'),
+        url('./assets/fonts/YuseiMagic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -16,7 +22,7 @@ body {
 
 :root {
     /* Estilos de Generales de Contenido*/
-    --bgColor: #C9C9C9;
+    --bgColor: #c9c9c9;
     --whiteColor: #ffffff;
     --primaryColor: #9c03b7;
     --secondaryColor: #9b48db;
@@ -98,8 +104,8 @@ img {
     .main-not-found {
         .flex-container {
             h2 {
-                    font-size: 2rem;
-                }
+                font-size: 2rem;
+            }
         }
         img {
             width: 30%;
