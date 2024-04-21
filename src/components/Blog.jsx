@@ -7,7 +7,7 @@ export default function Blog() {
 
     useEffect(() => {
         axios
-            .get('http://localhost:5000/other-users-recipes') //Se muestran todas las recetas creadas por los usuarios
+            .get('http://recetas-con-magia-blog.netlify.app/other-users-recipes') //Se muestran todas las recetas creadas por los usuarios
             .then((response) => {
                 setOtherUsersRecipes(response.data);
             })
