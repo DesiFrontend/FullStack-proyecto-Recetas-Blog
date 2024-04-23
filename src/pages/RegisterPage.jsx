@@ -83,9 +83,11 @@ function RegisterPage() {
                 }
             })
             .catch((error) => {
+                setTimeout(() => {
                 setMessage('Error al registrarse');
                 console.log('Error en la petición:' + error);
             }, 2000);
+        }
     }
 
     return (
