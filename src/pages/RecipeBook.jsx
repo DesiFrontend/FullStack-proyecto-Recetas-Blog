@@ -12,7 +12,7 @@ function RecipeBook() {
     useEffect(() => {
         // Aquí se hace la solicitud GET al servidor para obtener las recetas del usuario
         axios
-            .get(`http://localhost:5000/create-recipe/user/${userId}/recetas`)
+            .get(`https://fullstack-proyecto-recetas-blog.onrender.com/create-recipe/user/${userId}/recetas`)
             .then((response) => {
                 setRecipes(response.data);
             })

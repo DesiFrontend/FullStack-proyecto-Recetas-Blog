@@ -70,7 +70,7 @@ function CreateRecipe() {
 
         axios
             .post(
-                'http://localhost:5000/create-recipe',
+                'https://fullstack-proyecto-recetas-blog.onrender.com/create-recipe',
                 { ...recipeForm, userId },
                 config
             )

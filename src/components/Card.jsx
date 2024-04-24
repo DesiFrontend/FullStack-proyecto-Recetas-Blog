@@ -10,12 +10,12 @@ function Card({ recipe, setRecipes }) {
     const handleDelete = () => {
         // Aquí se elimina la receta haciendo click en el botón de Eliminar
         axios
-            .delete(`http://localhost:5000/delete-recipe/${recipe.recipeId}`)
+            .delete(`https://fullstack-proyecto-recetas-blog.onrender.com/delete-recipe/${recipe.recipeId}`)
             .then((_response) => {
                 // Actualiza las recetas después de la eliminación
                 axios
                     .get(
-                        `http://localhost:5000/create-recipe/user/${userId}/recetas`
+                        `https://fullstack-proyecto-recetas-blog.onrender.com/create-recipe/user/${userId}/recetas`
                     )
                     .then((response) => {
                         setRecipes(response.data);

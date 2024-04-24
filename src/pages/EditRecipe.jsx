@@ -46,7 +46,7 @@ function EditRecipe() {
     useEffect(() => {
         //Se obtiene la información de la receta desde la base de datos usando el ID de la receta
         axios
-            .get(`http://localhost:5000/get-recipe/${recipeId}`)
+            .get(`https://fullstack-proyecto-recetas-blog.onrender.com/get-recipe/${recipeId}`)
             .then((response) => {
                 setEditedRecipe(response.data);
             })
@@ -71,7 +71,7 @@ function EditRecipe() {
         //Se realiza la actualización de la receta
         axios
             .put(
-                `http://localhost:5000/update-recipe/${recipeId}`,
+                `https://fullstack-proyecto-recetas-blog.onrender.com/update-recipe/${recipeId}`,
                 editedRecipe
             )
             .then((response) => {

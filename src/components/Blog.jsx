@@ -7,7 +7,7 @@ export default function Blog() {
 
     useEffect(() => {
         axios
-            .get('https://localhost:5000/other-users-recipes') //Se muestran todas las recetas creadas por los usuarios
+            .get('https://fullstack-proyecto-recetas-blog.onrender.com/other-users-recipes') //Se muestran todas las recetas creadas por los usuarios
             .then((response) => {
                 setOtherUsersRecipes(response.data);
             })

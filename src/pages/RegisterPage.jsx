@@ -60,7 +60,7 @@ function RegisterPage() {
         // se ingresan los datos del nuevo usuario
         e.preventDefault();
         axios
-            .post(`http://localhost:5000/register`, {
+            .post(`https://fullstack-proyecto-recetas-blog.onrender.com/register`, {
                 username: formData.username,
                 email: formData.email,
                 password: formData.password,

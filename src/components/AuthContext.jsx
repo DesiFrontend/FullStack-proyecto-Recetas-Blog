@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (email, password) => {
         try {
-            const response = await axios.post('http://localhost:5000/login', {
+            const response = await axios.post('https://fullstack-proyecto-recetas-blog.onrender.com/login', {
                 email,
                 password,
             });
